@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Description:  prints the lowercase alphabet in reverse, followed by a new line
- * Return: 0
- */
+  * main - Prints the alphabet at reverse
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	char c = 'z';
+	char c;
 
-	while (c >= 'a')
+	for (c = 'z'; c >= 'a'; c--)
 	{
 		putchar(c);
-		c--;
 	}
 
 	putchar('\n');
+
 	return (0);
 }
